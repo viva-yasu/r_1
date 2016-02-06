@@ -44,6 +44,7 @@ GEM
       columnize (~> 0.8)
       debugger-linecache (~> 1.2)
       slop (~> 3.6)
+    coderay (1.1.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -53,6 +54,9 @@ GEM
     coffee-script-source (1.10.0)
     columnize (0.9.0)
     concurrent-ruby (1.0.0)
+    debase (0.2.1)
+      debase-ruby_core_source
+    debase-ruby_core_source (0.8.4)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
     erubis (2.7.0)
@@ -72,6 +76,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    method_source (0.8.2)
     mime-types (2.99)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
@@ -79,6 +84,21 @@ GEM
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     pg (0.17.1)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-byebug (3.0.1)
+      byebug (~> 3.4)
+      pry (~> 0.10)
+    pry-doc (0.8.0)
+      pry (~> 0.9)
+      yard (~> 0.8)
+    pry-rails (0.3.4)
+      pry (>= 0.9.10)
+    pry-stack_explorer (0.4.9.2)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -114,6 +134,8 @@ GEM
     rake (10.5.0)
     rdoc (4.2.1)
       json (~> 1.4)
+    ruby-debug-ide (0.6.0)
+      rake (>= 0.8.1)
     sass (3.4.21)
     sass-rails (5.0.2)
       railties (>= 4.0.0, < 5.0)
@@ -149,6 +171,7 @@ GEM
       binding_of_caller (= 0.7.3.pre1)
       railties (~> 4.0)
       sprockets-rails (>= 2.0, < 4.0)
+    yard (0.8.7.6)
 
 PLATFORMS
   ruby
@@ -156,11 +179,17 @@ PLATFORMS
 DEPENDENCIES
   byebug (= 3.4.0)
   coffee-rails (= 4.1.0)
+  debase
   jbuilder (= 2.2.3)
   jquery-rails (= 4.0.3)
   pg (= 0.17.1)
+  pry-byebug
+  pry-doc
+  pry-rails
+  pry-stack_explorer
   rails (= 4.2.2)
   rails_12factor (= 0.0.2)
+  ruby-debug-ide
   sass-rails (= 5.0.2)
   sdoc (= 0.4.0)
   spring (= 1.1.3)
